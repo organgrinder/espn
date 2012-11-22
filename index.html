@@ -16,7 +16,6 @@
     <![endif]-->
 </head>
 
-<!-- this is an alternative to the DOM Listener included in js file  -->
 <body onload="initialize()">
 
 <body>
@@ -28,17 +27,17 @@
 			</header>
 			<section id="main_content">
 
-				<p>Turns out ESPN's public API is very limited - you can't even get a roster for a team, or find out what team a player plays for.  So, all this button does is pull out all the NCAA basketball players who were born outside the US.</p>
+				<p>Turns out ESPN's public API is very limited - you can't get a roster for a team, or find out what team a player plays for.</p>
+					
+				<p>One thing that is available is birthplace for athletes.  Click the button below for a demonstration.</p>
 				
 				<div id="map_buttons">
-					<button type="button" onClick="loadTeam()" class="button blue">
+					<button type="button" onClick="loadPlayers()" class="button blue">
 						Show International NCAA Players
 					</button>
 				</div>
 				<div id="alert_info"></div>
 				<div id="display_results"></div>
-				<h3>What's currently shown</h3>
-				<div id="display_info">Some info about the data above</div>
 			</section> <!-- main_content -->
 		</div> <!-- inner -->
     </div> <!-- container -->
